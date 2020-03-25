@@ -1,11 +1,11 @@
 // boki trójkąta
-//a = 3;
+let a = 3;
 b = 4;
 c = 5;
 h = 7
 
-// Pole trókąta o bokach ..., ... oraz ... wynosi ... .
+var p = (a + b + c)/2;
 
-let a = () => "aaaa";
+var wynik = Math.sqrt(p*(p-a)*(p-b)*(p-c));
 
-console.log( a() );
+console.log(`Pole trókąta o bokach ${a}, ${b} oraz ${c} wynosi ${wynik}`);
