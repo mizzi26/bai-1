@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+		
+		table {
+  border: 1px solid black;
+}
+		  </style>
 		<title>Create DOM elements</title>
 		<meta charset="UTF-8">
 	</head>
 	<body>
 		<script>
-			// a JavaScript code here ...
-			
+			table = document.createElement("table");
+			table.innerHTML = "<tr><td>1</td><td>2</td></tr><tr><td>3</th><td>4</th></tr>";			
+			document.body.appendChild(table);
+			document.getElementsByTagName("table").style.border = "solid";
+
 		</script>
 	</body>
 </html>
